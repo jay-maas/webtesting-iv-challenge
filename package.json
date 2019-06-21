@@ -8,9 +8,6 @@
     "test": "cross-env DB_ENV=testing jest --watch",
     "start": "node index.js"
   },
-  "jest": {
-    "testEnvironment": "node"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jay-maas/webtesting-iv-challenge.git"
