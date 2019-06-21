@@ -18,10 +18,12 @@ function insert(character) {
     })
 }
 
-function update(id, changes) {
-  return db('characters')
+async function update(id, changes) {
+  await db('characters')
         .where({ id })
         .update(changes, '*')
+
+        return findById(id)
 }
 
 function remove(id) {
